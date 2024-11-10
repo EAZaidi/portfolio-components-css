@@ -1,0 +1,77 @@
+/* Card.css */
+
+.card-container {
+    border: 1px solid #166534; /* equivalent to border-green-800 */
+    width: 300px;
+}
+
+@media (min-width: 640px) {
+    .card-container {
+        width: 350px; /* equivalent to sm:w-[350px] */
+    }
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 640px) {
+    .card-image{
+        width: 350px;
+    }
+}
+
+.card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* equivalent to space-y-4 */
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem /* 16px */ * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem /* 16px */ * var(--tw-space-y-reverse));
+}
+
+.card-title {
+    font-size: 2.25rem; /* equivalent to text-4xl */
+    line-height: 2.5rem;
+    font-weight: 200; /* equivalent to font-extralight */
+}
+
+.card-description {
+    font-size: 1rem;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Space between tags */
+}
+
+.tag {
+    background-color: #0d2205; /* Light gray background for tags */
+    padding: 4px 8px;
+    font-size: 0.875rem; /* Small text */
+    background-color: #1e0283;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 3px 10px;
+        display: inline-block;
+        color: #fff;
+        font-size: 12px;
+}
+.tag:last-child {
+    margin-right: 0;
+}
+
+.tag:nth-child(2) {
+    background-color: rgb(25, 61, 4);
+}
+
+.tag:nth-child(3) {
+    background-color: rgb(88, 1, 20)
+}
+
+.tag:nth-child(4) {
+    background-color: rgb(71, 61, 0);
+}

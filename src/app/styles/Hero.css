@@ -1,0 +1,76 @@
+/* Hero.css */
+
+.hero-container {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 25%;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: calc(90vh - 30px); /* Custom height calculation */
+    margin-left: 8.15rem;
+  }
+
+  @media (min-width: 640px) {
+    .hero-content {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .hero-content {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .hero-content {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .hero-content {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .hero-content {
+        max-width: 1536px;
+    }
+}
+
+  
+  @media (min-width: 1024px) {
+    .hero-content {
+      grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two-column layout for large screens */
+    }
+  }
+  .hero-text {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:block {
+        display: block;
+    }
+}
+
+  .hero-detail {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.25;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  @media (min-width: 640px) {
+    .hero-text {
+      font-size: 70px; /* Larger text for small screens and above */
+    }
+  }
+  

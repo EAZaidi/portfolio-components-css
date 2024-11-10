@@ -1,0 +1,133 @@
+/* Contact.css */
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 640px) {
+  .container {
+      max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+      max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+      max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+      max-width: 1536px;
+  }
+}
+  
+  .contact-grid {
+    display: grid;
+    
+    @media (min-width: 768px) {
+      .contact-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+  }
+  .contact-grid {
+    gap: 2.5rem /* 40px */;
+}
+  }
+  
+  @media (min-width: 768px) {
+    .contact-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+  }
+
+  .contact-info > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem /* 32px */ * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem /* 32px */ * var(--tw-space-y-reverse));
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contact-title {
+    font-size: 3rem;
+    line-height: 1;
+    margin-left: 2.25rem;
+    margin-top: 4rem;
+  }
+  
+  .contact-description {
+    font-size: 18px;
+    padding-top: 0.5rem;
+    color: #4a5568;
+    margin-left: 5rem;
+  }
+  
+   .contact{
+    display: none;
+    align-items: start;
+    justify-items: start;
+    gap: 8px;
+    margin: 2rem;
+  }
+
+  .contact-form {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem /* 32px */ * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem /* 32px */ * var(--tw-space-y-reverse));
+
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 2px;
+    margin-top: 30px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #2f855a;
+    padding: 8px;
+    font-size: 16px;
+    width: 95%;
+  }
+  
+  .form-textarea {
+    height: auto;
+    width: 95%;
+  }
+  
+  .send-button {
+    background-color: #15803d;
+    color: white;
+    border: #15803d;
+    margin-top: 30px;
+    row-gap: 2rem;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #16a34a;
+  }
+  

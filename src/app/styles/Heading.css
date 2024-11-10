@@ -1,0 +1,16 @@
+/* Heading.css */
+
+.heading-container {
+    text-align: center;
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    line-height: 2.5rem;
+    padding-bottom: 2rem; /* Equivalent to pb-8 */
+  }
+  
+  .heading-title {
+    display: inline-block;
+    border-bottom: 4px solid white; /* Equivalent to border-b-4 */
+    display: inline-block;
+    padding-bottom: 0.5rem; /* Equivalent to pb-2 */
+  }
+  

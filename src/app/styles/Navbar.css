@@ -1,0 +1,100 @@
+/* Navbar.css */
+
+/* Navbar container */
+.navbar-container {
+    position: fixed;
+    padding-top: 2rem;
+    width: 100%;
+    margin-right: 6rem;
+    margin-left: -1.25rem;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+
+}
+
+/* Navbar links */
+.navbar-links {
+  display: flex;
+  gap: 40px;
+  font-weight: bold;
+  gap: 4.5rem; /* Equivalent to gap-10 */
+}
+
+@media (min-width: 1024px) {
+  .navbar-links {
+      gap: 4rem /* 64px */;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-links {
+      display: flex;
+  }
+}
+
+.navbar-link {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: #16a34a; /* Equivalent to green hover */
+}
+
+/* Mobile menu icon */
+.navbar-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* Show menu on small screens */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .md {
+      display: none;
+  }
+}
