@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="hero-text"></div>
           <div className='hero-detail'>
           <div>
-            <p data-aos="zoom-in">I'm</p>
+            <p data-aos="zoom-in">I&apos;m</p>
             <p data-aos="zoom-in">Essa</p>
             <p data-aos="zoom-in">Abbas Zaidi</p>
           </div>
