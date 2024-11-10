@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/Contact.css'; // Import the custom CSS file
 import { GoMail } from "react-icons/go";
 import { BsTelephoneInbound } from "react-icons/bs";
-import Link from 'next/link';
 
 function Contact() {
   return (
